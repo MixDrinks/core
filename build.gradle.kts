@@ -1,7 +1,7 @@
 @file:Suppress("UNUSED_VARIABLE")
 
 plugins {
-    kotlin("multiplatform") version "1.8.21"
+    kotlin("multiplatform") version "1.8.22"
     kotlin("plugin.serialization") version "1.8.21"
     id("org.jetbrains.dokka") version "1.8.10"
     id("maven-publish")
