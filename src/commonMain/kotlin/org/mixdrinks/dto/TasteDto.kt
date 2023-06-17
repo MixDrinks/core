@@ -10,8 +10,7 @@ value class TasteId(val id: Int)
 
 @Serializable
 data class TasteDto(
-    @SerialName("id")
-    val id: TasteId,
-    @SerialName("name")
-    val name: String,
+    @SerialName("id") val id: TasteId,
+    @SerialName("slug") val slug: String,
+    @SerialName("name") val name: String,
 )
