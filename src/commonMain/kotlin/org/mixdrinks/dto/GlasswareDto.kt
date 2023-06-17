@@ -10,10 +10,8 @@ value class GlasswareId(val value: Int)
 
 @Serializable
 data class GlasswareDto(
-    @SerialName("id")
-    val id: GlasswareId,
-    @SerialName("name")
-    val name: String,
-    @SerialName("about")
-    val about: String,
+    @SerialName("id") val id: GlasswareId,
+    @SerialName("slug") val slug: String,
+    @SerialName("name") val name: String,
+    @SerialName("about") val about: String,
 )

@@ -10,8 +10,7 @@ value class TagId(val id: Int)
 
 @Serializable
 data class TagDto(
-    @SerialName("id")
-    val id: TagId,
-    @SerialName("name")
-    val name: String,
+    @SerialName("id") val id: TagId,
+    @SerialName("slug") val slug: String,
+    @SerialName("name") val name: String,
 )

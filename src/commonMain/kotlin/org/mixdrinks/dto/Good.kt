@@ -11,6 +11,7 @@ value class GoodId(val id: Int)
 @Serializable
 data class GoodDto(
     @SerialName("id") val id: GoodId,
+    @SerialName("slug") val slug: String,
     @SerialName("name") val name: String,
     @SerialName("about") val about: String,
 )

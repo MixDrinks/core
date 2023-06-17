@@ -12,6 +12,7 @@ class CocktailDtoTest {
         val json = """
             {
               "id": 1,
+              "slug": "test",              
               "name": "Test",
               "receipt": [
                 "Test"
@@ -40,6 +41,7 @@ class CocktailDtoTest {
                     tags = listOf(TagId(1)),
                     tastes = listOf(TasteId(1)),
                     glassware = GlasswareId(1),
+                    slug = "test",
                 )
             ), json.replace('\n', ' ')
                 .replace(" ", "")
@@ -60,10 +62,12 @@ class CocktailDtoTest {
                     tags = listOf(TagId(1)),
                     tastes = listOf(TasteId(1)),
                     glassware = GlasswareId(1),
+                    slug = "test",
                 )
             ), """
             {
               "id": 1,
+              "slug": "test",
               "name": "Test",
               "receipt": [
                 "Test"

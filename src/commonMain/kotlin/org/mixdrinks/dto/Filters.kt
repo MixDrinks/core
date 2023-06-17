@@ -14,6 +14,10 @@ value class FilterGroupId(val value: Int)
 @Serializable
 value class FilterId(val value: Int)
 
+@JvmInline
+@Serializable
+value class FilterQueryName(val value: String)
+
 @Serializable
 enum class SelectionType {
     @SerialName("SINGLE")
@@ -26,6 +30,7 @@ enum class SelectionType {
 @Serializable
 data class FilterGroupDto(
     @SerialName("id") val id: FilterGroupId,
+    @SerialName("slug") val slug: String,
     @SerialName("name") val name: String,
     @SerialName("filters") val filters: List<FilterWithCocktailIdsDto>,
     @SerialName("selectionType") val selectionType: SelectionType,
@@ -48,6 +53,7 @@ data class FilterGroupDto(
 @Serializable
 data class FilterWithCocktailIdsDto(
     @SerialName("id") val id: FilterId,
+    @SerialName("slug") val slug: String,
     @SerialName("name") val name: String,
     @SerialName("cocktailIds") val cocktailIds: Set<CocktailId>,
 )

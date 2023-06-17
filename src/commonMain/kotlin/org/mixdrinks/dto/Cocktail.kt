@@ -11,6 +11,7 @@ value class CocktailId(val id: Int)
 @Serializable
 data class CocktailDto(
     @SerialName("id") val id: CocktailId,
+    @SerialName("slug") val slug: String,
     @SerialName("name") val name: String,
     @SerialName("receipt") val receipt: List<String>,
     @SerialName("goods") val goods: List<GoodRelationDto>,
