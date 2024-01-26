@@ -41,7 +41,7 @@ jobs:
           distribution: temurin
           java-version: 11
       - name: Setup Gradle
-        uses: gradle/gradle-build-action@v2
+        uses: gradle/gradle-build-action@v3
       - name: Execute Gradle build
         env:
           MIX_DRINKS_CORE_VERSION: ${{ needs.tag_create.outputs.output_write_mix_drinks_code_version }}
