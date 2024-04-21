@@ -22,7 +22,7 @@ jobs:
       output_write_mix_drinks_code_version: ${{ steps.set-output.outputs.mix_drinks_core_version }}
   deploy:
     needs: [ prepare_deploy ]
-    runs-on: macos-13
+    runs-on: macos-14
     steps:
       - name: Print MIX_DRINKS_CORE_VERSION
         run: echo ${{ needs.prepare_deploy.outputs.output_write_mix_drinks_code_version }}
