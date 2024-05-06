@@ -1,3 +1,8 @@
+# Welcome to our repository! Please note that our native app projects are now archived.
+
+## [Visit our web](https://mixdrinks.org/)
+
+
 ## Core бібліотека для mixdirnks.org
 
 Тут увесь код що шариться між проектами: backend та android (потенційно ios)
